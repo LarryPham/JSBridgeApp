@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="FrameworkRoot.Theme" parent="Theme.AppCompat.Light.NoActionBar"/>
+    <style name="FrameworkRoot.Widget" parent="Theme.AppCompat.NoActionBar"/>
+
+    <style name="Theme" parent="FrameworkRoot.Theme">
+
+    </style>
+
+    <style name="Theme.JSBridgeApp.Base" parent="Theme">
+        <item name="homeAsUpIndicator">@drawable/ic_menu</item>
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/color_accent</item>
+        <item name="windowActionBar">false</item>
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <style name="Theme.JSBridgeApp" parent="Theme.JSBridgeApp.Base"/>
+</resources>

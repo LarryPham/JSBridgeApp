@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="messeger_panel_width">320dp</dimen>
+    <dimen name="action_bar_height">56dp</dimen>
+    <dimen name="keyline_2">16dp</dimen>
+</resources>
