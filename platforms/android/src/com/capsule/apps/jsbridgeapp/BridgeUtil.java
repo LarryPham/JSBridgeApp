@@ -1,7 +1,6 @@
 package com.capsule.apps.jsbridgeapp;
 
 import android.content.Context;
-import android.util.Base64;
 import android.webkit.WebView;
 
 import java.io.BufferedReader;
@@ -11,7 +10,7 @@ import java.io.InputStreamReader;
 
 public class BridgeUtil {
 	final static String YY_OVERRIDE_SCHEMA = "yy://";
-	final static String YY_RETURN_DATA = YY_OVERRIDE_SCHEMA + "return/";//格式为   yy://return/{function}/returncontent
+	final static String YY_RETURN_DATA = YY_OVERRIDE_SCHEMA + "return/";//yy://return/{function}/returncontent
 	final static String YY_FETCH_QUEUE = YY_RETURN_DATA + "_fetchQueue/";
 	final static String EMPTY_STR = "";
 	final static String UNDERLINE_STR = "_";
@@ -25,8 +24,7 @@ public class BridgeUtil {
 	public static String parseFunctionName(String jsUrl){
 		return jsUrl.replace("javascript:WebViewJavascriptBridge.", "").replaceAll("\\(.*\\);", "");
 	}
-	
-	
+
 	public static String getDataFromReturnUrl(String url) {
 		if(url.startsWith(YY_FETCH_QUEUE)) {
 			return url.replace(YY_FETCH_QUEUE, EMPTY_STR);
